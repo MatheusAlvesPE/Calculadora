@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha calculadora</title>
+</head>
+<style>
+    body{background-color: rgb(44, 44, 44);
+    font: normal 40pt arial;}
+    h1{color: rgb(125, 255, 170);
+    }
+    p{color: rgb(240, 240, 240);
+    font: normal 25pt arial;
+}
+    
+</style>
+<body>
+    <h1>Espero que você tenha gostado!</h1>
+    <p>... Para fazer um novo cálculo basta atualizar a página apertando F5</p>
+    <script>
+        var nome = prompt("Qual o seu nome? ");
+        alert(`Olá, ${nome}!`);
+        alert("Vamos fazer algumas contas?");
+        var numero1 = parseFloat(prompt("Digite um número: "));
+        var operacao = prompt("Escolha a operação a ser realizada  (+, -, * ou /):");
+        var numero2 = parseFloat(prompt("Digite o segundo número:"));
+        var resultado;
+        if (operacao == "+"){
+            resultado = numero1 + numero2;
+        }
+        else if (operacao == "-"){
+            resultado = numero1 - numero2;
+        }
+        else if (operacao == "*"){
+            resultado = numero1 * numero2;
+        }
+        else{ (operacao == "/");
+            resultado = numero1 / numero2;
+    }
+        alert(`O resultado do seu cálculo é: ${resultado}`)
+        
+    </script>
+</body>
+</html>
